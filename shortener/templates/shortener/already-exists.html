@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}
+  {{ object.shortcode }}
+{% endblock title %}
+{% block content %}
+<div style = "width:800px; text-align:center;margin: 0 auto">
+    <h1 style = "color:#827c79;">ALREADY EXISTS!! :)</h1>
+    <p><h3 style = "color:#6a7b35;">submitted url:</h3>{{ object.url }}</p>
+    <p><h3 style = "color:#6a7b35;">shortcode:</h3><a href = "{{ object.get_short_url }}">{{ object.get_short_url }}</a></p>
+    <a class = 'btn btn-default' href = '/'>+ New</a>
+</div>
+{% endblock %}
